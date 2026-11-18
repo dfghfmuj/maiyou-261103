@@ -1,0 +1,23 @@
+{
+  "name": "maiyou-261103",
+  "version": "1.0.0",
+  "description": "秒邮（miaoyou）D1 加密版：Cloudflare Worker + D1 + Email Routing",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend run dev",
+    "dev:backend": "wrangler dev",
+    "build": "pnpm --filter frontend run build",
+    "deploy": "wrangler deploy",
+    "deploy:all": "bash scripts/deploy.sh",
+    "secrets:setup": "bash scripts/setup-secrets.sh",
+    "db:backup": "bash scripts/db-backup.sh",
+    "encryption:status": "bash scripts/encryption-admin.sh status",
+    "encryption:migrate": "bash scripts/encryption-admin.sh migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "wrangler": "^4.20.5"
+  }
+}
